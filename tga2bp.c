@@ -15,8 +15,8 @@ typedef uint32_t DWORD;
 // Slightly adapted from https://www.fileformat.info/format/tga/egff.htm
 // WARNING: this program reads this full header in one go and the use of
 // packed  structs  (to  prevent  padding)  is  implementation-specific!
-// Although my tackle cannot be considered as compliant to all the  best
-// practices and affect  code portability, I have  chosen to go the  GCC
+// Although my tackle cannot  be considered  as compliant to major  best
+// practices and affects code portability, I have  chosen to go the  GCC
 // way   with  the   use  of  the   __attribute__((packed))   extension.
 struct __attribute__((packed)) tgaHeader_t {
   BYTE idLength;        /* 00h  Size of Image ID field */
@@ -47,7 +47,6 @@ struct __attribute__((packed)) pixel_t {
 
 struct pixel_t *raster=NULL;
 struct pixel_t palette[16]={0};
-
 
 int main(int argc, char *argv[]) {
     FILE *fp=NULL;
