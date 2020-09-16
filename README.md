@@ -1,2 +1,2 @@
-# TGA2Bitplanes
-A simple tool to convert TGA image files to Sega Master System VDP bitplanes.
+# TGA2SMS
+A helper tool to convert TGA image files into Sega Master System planar graphics.
